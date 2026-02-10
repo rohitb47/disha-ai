@@ -7,21 +7,9 @@ const __dirname = path.dirname(__filename)
 
 const app = express()
 
-// Home route - Redirect to sponsorship page
+// Home route - Redirect to Disha AI
 app.get('/', (req, res) => {
-  res.redirect('https://askdisha-ai.vercel.app/sponsorship')
-})
-
-app.get('/about', function (req, res) {
-  res.sendFile(path.join(__dirname, '..', 'components', 'about.htm'))
-})
-
-// Example API endpoint - JSON
-app.get('/api-data', (req, res) => {
-  res.json({
-    message: 'Here is some sample API data',
-    items: ['apple', 'banana', 'cherry'],
-  })
+  res.redirect('https://disha.usefulthings.io')
 })
 
 // Health check
